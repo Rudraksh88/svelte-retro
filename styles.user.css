@@ -1,0 +1,422 @@
+/* ==UserStyle==
+@name           SvelteRetro Docs
+@namespace      github.com/openstyles/stylus
+@version        1.0.0
+@description    A new userstyle
+@author         Rudraksh Tripathi
+==/UserStyle== */
+
+@-moz-document url-prefix("https://svelte.dev/") {
+    :root {
+        --sk-font-family-heading: "Advercase Demo" !important;
+        --sk-font-size-h1: 5rem !important;
+        --sk-font-family-body: "Libre Caslon Text" !important;
+    }
+
+    .home-link.svelte-wyep2e {
+        margin-top: -2px !important;
+        background-image: url("data:image/svg+xml,%3Csvg%20width%3D%22121%22%20height%3D%2225%22%20viewBox%3D%220%200%20121%2025%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M34.8535%2020.404C33.5837%2020.404%2032.7026%2019.6525%2031.8992%2018.6936C31.5882%2018.3308%2031.1218%2017.6052%2030.9922%2017.2683L33.6614%2016.5686C34.1538%2017.3201%2034.7239%2017.8125%2034.9571%2017.8125H39.2071C39.3108%2017.8125%2039.544%2017.6311%2039.9068%2017.2683C40.2437%2016.9314%2040.451%2016.6723%2040.451%2016.5686V15.0397C40.451%2014.8064%2040.2696%2014.625%2040.1401%2014.5991L33.4022%2012.6814C32.0806%2012.3186%2031.3809%2011.0747%2031.3809%209.85673V8.561C31.3809%207.78356%2031.5364%207.26527%2032.0029%206.72106C32.3138%206.35825%2032.884%205.76222%2033.169%205.50307C33.8428%204.88112%2034.387%204.64789%2035.294%204.64789H39.0776C40.3474%204.64789%2041.2285%205.39941%2042.0318%206.35825C42.3428%206.72106%2042.8093%207.44667%2042.9388%207.78356L40.2696%208.48325C39.7773%207.73173%2039.2071%207.23935%2038.9998%207.23935H35.3458C35.2422%207.23935%2035.009%207.42075%2034.6462%207.78356C34.3093%208.12045%2034.1019%208.3796%2034.1019%208.48325V9.70124C34.1019%209.93447%2034.2574%2010.1159%2034.387%2010.1418L41.1507%2012.1113C42.4724%2012.5%2043.1721%2013.7698%2043.1721%2014.936V16.4909C43.1721%2017.2683%2043.0166%2017.7866%2042.5501%2018.3308C42.2391%2018.6936%2041.669%2019.2897%2041.384%2019.5488C40.7102%2020.1708%2040.166%2020.404%2039.259%2020.404H34.8535ZM57.5701%204.77746H60.4207L55.2896%2020.2744H52.1021L46.9969%204.77746H49.9253L53.7088%2016.8019L57.5701%204.77746ZM74.5301%207.36892H67.5073V11.282H74.0378V13.8735H67.5073V17.683H74.5301V20.2744H64.7862V4.77746H74.5301V7.36892ZM83.1573%2017.683H90.0247V20.2744H80.4362V4.77746H83.1573V17.683ZM103.616%204.77746V7.36892H99.4178V20.2744H96.6968V7.36892H92.4986V4.77746H103.616ZM118.545%207.36892H111.522V11.282H118.052V13.8735H111.522V17.683H118.545V20.2744H108.801V4.77746H118.545V7.36892Z%22%20fill%3D%22%23332D21%22%20fill-opacity%3D%220.9%22%2F%3E%0A%3Cpath%20fill-rule%3D%22evenodd%22%20clip-rule%3D%22evenodd%22%20d%3D%22M9.22835%201.19932C12.5181%20-0.896707%2017.0681%200.0806088%2019.3717%203.37785C19.9184%204.14307%2020.3069%205.00976%2020.5141%205.92709C20.7213%206.84441%2020.7432%207.79389%2020.5784%208.71979C20.419%209.60398%2020.0818%2010.4466%2019.5874%2011.1968C20.3088%2012.5727%2020.5508%2014.1497%2020.2752%2015.6785C20.1124%2016.5861%2019.762%2017.4499%2019.2464%2018.2143C18.7307%2018.9788%2018.0612%2019.6273%2017.2807%2020.1183L11.503%2023.8006C8.21374%2025.8965%203.66385%2024.9197%201.35962%2021.6221C0.813026%2020.8569%200.42474%2019.9901%200.217535%2019.0729C0.0103314%2018.1555%20-0.011617%2017.2061%200.152978%2016.2802C0.312651%2015.3959%200.649959%2014.5532%201.14451%2013.803C0.422775%2012.4274%200.180532%2010.8503%200.456139%209.32142C0.619007%208.4138%200.969456%207.55015%201.48509%206.78567C2.00071%206.02119%202.67018%205.37272%203.45068%204.88168L9.22835%201.19932ZM5.91391%2021.7939C6.7948%2022.1204%207.75467%2022.1688%208.6639%2021.9323C9.07929%2021.8213%209.47513%2021.6474%209.83783%2021.4165L15.6152%2017.7346C16.0845%2017.4392%2016.4871%2017.0492%2016.7972%2016.5895C17.1072%2016.1299%2017.3181%2015.6104%2017.4161%2015.0646C17.515%2014.5078%2017.5019%2013.9368%2017.3772%2013.3852C17.2527%2012.8335%2017.019%2012.3123%2016.6903%2011.8522C16.1548%2011.0802%2015.3953%2010.4913%2014.5145%2010.1647C13.6336%209.83822%2012.6737%209.7899%2011.7645%2010.0263C11.3494%2010.1372%2010.9538%2010.3111%2010.5914%2010.5419L8.38692%2011.9469C8.27725%2012.0166%208.15759%2012.0692%208.03205%2012.1029C7.75812%2012.1739%207.46897%2012.1591%207.20367%2012.0606C6.93836%2011.9622%206.70966%2011.7847%206.54841%2011.5521C6.44945%2011.4133%206.37917%2011.2562%206.34169%2011.0899C6.3042%2010.9236%206.30025%2010.7515%206.33009%2010.5837C6.35961%2010.4193%206.42312%2010.2629%206.5165%2010.1245C6.6099%209.98599%206.73115%209.86854%206.87251%209.77959L12.6503%206.0975C12.7599%206.02769%2012.8796%205.97509%2013.0052%205.94153C13.279%205.87046%2013.5681%205.88514%2013.8333%205.98357C14.0985%206.08201%2014.3271%206.25947%2014.4883%206.49198C14.6648%206.74191%2014.7473%207.04616%2014.7213%207.35102L14.7015%207.56534L14.9163%207.63051C15.7286%207.87557%2016.4929%208.25764%2017.1764%208.76022L17.4723%208.9773L17.5812%208.64552C17.6394%208.46903%2017.6856%208.28877%2017.7193%208.10598C17.8182%207.54915%2017.8051%206.97817%2017.6804%206.42651C17.5557%205.87487%2017.3222%205.35366%2016.9934%204.89349C16.458%204.12159%2015.6985%203.53261%2014.8176%203.20608C13.9368%202.87958%2012.9769%202.83125%2012.0677%203.06764C11.6523%203.17863%2011.2564%203.35259%2010.8937%203.58348L5.1164%207.26573C4.64699%207.5609%204.24437%207.9508%203.93426%208.41047C3.62416%208.87014%203.41341%209.38947%203.3155%209.93525C3.21647%2010.4921%203.22967%2011.0631%203.35432%2011.6147C3.47896%2012.1664%203.71252%2012.6876%204.04131%2013.1477C4.57676%2013.9196%205.33621%2014.5086%206.21708%2014.8351C7.09797%2015.1617%208.05783%2015.21%208.96704%2014.9736C9.38208%2014.8626%209.77774%2014.6889%2010.1403%2014.4584L12.345%2013.0529C12.4545%2012.9832%2012.5741%2012.9306%2012.6995%2012.897C12.9734%2012.826%2013.2625%2012.8407%2013.5279%2012.9392C13.7932%2013.0377%2014.0219%2013.2152%2014.1831%2013.4478C14.282%2013.5866%2014.3523%2013.7437%2014.3899%2013.9099C14.4274%2014.0762%2014.4315%2014.2483%2014.4019%2014.4161C14.3722%2014.5805%2014.3086%2014.7369%2014.2151%2014.8754C14.1217%2015.0139%2014.0004%2015.1314%2013.859%2015.2204L8.08121%2018.9023C7.97158%2018.9721%207.85188%2019.0247%207.72632%2019.0582C7.45249%2019.1294%207.16345%2019.1146%206.89824%2019.0163C6.63301%2018.9178%206.4044%2018.7404%206.24326%2018.5078C6.06653%2018.2581%205.98397%2017.9537%206.01022%2017.6488L6.02999%2017.4345L5.81527%2017.3694C5.00312%2017.1242%204.23877%2016.7424%203.55516%2016.2401L3.25916%2016.0227L3.15036%2016.3544C3.09195%2016.5309%203.0458%2016.7111%203.01228%2016.8941C2.91329%2017.4509%202.92649%2018.0218%203.05114%2018.5735C3.17577%2019.1252%203.40932%2019.6463%203.73809%2020.1066C4.27356%2020.8784%205.03303%2021.4674%205.91391%2021.7939Z%22%20fill%3D%22%23FF3E00%22%2F%3E%0A%3C%2Fsvg%3E%0A") !important;
+    }
+
+    :root.font-boring {
+        letter-spacing: -.05em !important;
+        --sk-font-size-body: 1.6rem;
+    }
+
+    .toc-container.svelte-1anzzz4 {
+        background: #f9f1e4 !important
+    }
+
+    h1 {
+        color: #373022 !important;
+    }
+
+    .page.svelte-1e4cvs7 {
+        font-size: 1.5rem !important;
+        color: #b09266 !important;
+    }
+
+    .page.svelte-1e4cvs7:before {
+        content: '•';
+        height: 10px;
+        width: 10px;
+        left: -1em;
+        position: absolute;
+        color: #c3a272;
+    }
+
+    [aria-current=page].svelte-1e4cvs7 {
+        color: #f8603a !important;
+        text-decoration: none !important;
+        position: relative;
+    }
+
+    [aria-current=page].svelte-1e4cvs7:before {
+        content: '';
+        background-image: linear-gradient(#f8603a, yellow);
+        height: 10px;
+        width: 10px;
+        left: -1.1em;
+        position: absolute;
+        top: 30%
+    }
+
+    body {
+        background-color: hsla(0,0%,100%,1);
+        background-image:
+            radial-gradient(at 34% 12%, hsl(30, 100%, 98%) 0px, transparent 50%),
+            radial-gradient(at 62% 42%, hsla(17,100%,97%,1) 0px, transparent 50%),
+            radial-gradient(at 100% 100%, hsla(34,82%,91%,1) 0px, transparent 50%);
+        background-size: 100% 100%;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        min-height: 100vh;
+        margin: 0;
+    }
+
+    .text.svelte-xe9wq3 h2>span {
+        overflow: visible !important;
+    }
+
+    .scrollbars-invisible [aria-current=page].svelte-1e4cvs7:after {
+        background-color: hsl(27, 100%, 99%) !important;
+        box-shadow: none !important;
+    }
+
+    .breadcrumbs.svelte-bkdwgg {
+        font-family: "Gabarito" !important;
+        font-weight: 700!important;
+        letter-spacing: 0.25rem;
+        margin-bottom: 1.3rem !important;
+        font-size: 1.2rem !important;
+        position: relative !important;
+    }
+
+    .breadcrumbs.svelte-bkdwgg span:where(.svelte-bkdwgg):not(:last-child):after {
+        content: "›" !important;
+        font-size: 1.2em !important;
+        margin: 0 7px !important;
+    }
+
+    .svelte-bkdwgg {
+        color: #f96743 !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .filename::before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 16px;  /* Adjust size as needed */
+        height: 16px; /* Adjust size as needed */
+        background-image: url('https://upload.wikimedia.org/wikipedia/commons/1/1b/Svelte_Logo.svg');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .filename {
+        position: relative;
+        padding-left: 24px; /* Add some space for the icon */
+        margin-top: -8px !important;
+        font-family: "JetBrains Mono" !important;
+        letter-spacing: 0 !important;
+        font-weight: 700!important;
+        color: #8c570d !important;
+    }
+
+    span:where(.svelte-bkdwgg):not(:last-child) {
+        color: #CBB18D !important;
+    }
+
+    h3.svelte-1e4cvs7, h3 {
+        font-family: "Gabarito" !important;
+        text-transform: uppercase !important;
+        font-size: 0.8em !important;
+        font-weight: 700 !important;
+        letter-spacing: .15em;
+        margin-bottom: .5em;
+        color: #8F6C39 !important;
+        margin-left: -1.5em !important;
+    }
+
+    code {
+        font-family: "JetBrains Mono" !important;
+        font-weight: 600 !important;
+        letter-spacing: normal !important;
+        font-feature-settings: 'liga', 'zero' !important;
+        line-height: 1.5 !important;
+    }
+
+    nav.svelte-wyep2e {
+        background-color: #fffbf6 !important;
+        box-shadow: 0 7px 45px 10px rgba(145, 84, 0, .12);
+/*         margin-top: -2px !important; */
+    }
+
+    .links.svelte-wyep2e {
+        gap: 1rem !important;
+        margin-left: 2rem !important;
+    }
+
+    nav.svelte-wyep2e * {
+        font-family: "Gabarito" !important;
+        text-transform: uppercase !important;
+        letter-spacing: 0.2em;
+        font-size: 1.3rem !important;
+        font-weight: 600 !important;
+    }
+
+    nav.svelte-wyep2e:after {
+        display: none;
+    }
+
+    aside h3 {
+        font-size: 1.2rem !important;
+        margin-left: 0rem !important;
+        margin-bottom: .7rem !important;
+    }
+
+    .on-this-page.svelte-ro60mh nav:where(.svelte-ro60mh) a:where(.svelte-ro60mh) {
+        font-size: 1.5rem !important;
+        text-decoration: none !important;
+        color: rgb(176, 146, 102) !important;
+    }
+
+    .on-this-page.svelte-ro60mh nav:where(.svelte-ro60mh) a.active:where(.svelte-ro60mh) {
+        color: #f96743 !important;
+    }
+
+    .toc-container.svelte-1anzzz4:after {
+        background-image: linear-gradient(90deg, rgb(255 255 255 / 0%), hsl(34deg 62.62% 89.68% / 80%)) !important;
+        width: 45px !important;
+    }
+
+    .raised, .text.svelte-xe9wq3 details:before {
+        border-radius: none !important;
+        border-style: none !important;
+        border-color: none !important;
+        border-width: none !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block pre {
+        border-radius: .7rem !important;
+        background-color: #FFFCF9 !important;
+        border: 2px solid #ecddc7 !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls:has(.filename) {
+        background-color: #f9efe1 !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block {
+        padding: 4px !important;
+        background-color: #f9efe1 !important;
+        border: 2px solid #ecddc7 !important;
+        border-radius: 1rem !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .copy-to-clipboard {
+        margin-top: -3px !important;
+        margin-right: 3px !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .ts-toggle {
+        font-family: JetBrains Mono;
+        font-weight: 900;
+        letter-spacing: .05em !important;
+        gap: 5px;
+        margin-top: -6px !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .ts-toggle[checked]:before, .text.svelte-xe9wq3 .code-block .controls .ts-toggle[checked]:after {
+        color: #f8603a !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls:not(:has(.filename)) {
+        background: none !important;
+        margin: 9px 6px !important;
+    }
+
+    button:before, button:after {
+        color: #8c570d !important;
+    }
+
+    .breadcrumbs.svelte-bkdwgg:before {
+        content: '';
+        background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2248%22%20height%3D%227%22%20viewBox%3D%220%200%2048%207%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0%207L-1.01993e-07%204.66667L48%204.66667L48%207L0%207Z%22%20fill%3D%22%23FCCA5B%22%2F%3E%0A%3Cpath%20d%3D%22M-1.01993e-07%204.66667L-2.03986e-07%202.33333L48%202.33334L48%204.66667L-1.01993e-07%204.66667Z%22%20fill%3D%22%23F3A33D%22%2F%3E%0A%3Cpath%20d%3D%22M-2.03986e-07%202.33333L5.32254e-06%201.90735e-06L48%201.2207e-05L48%202.33334L-2.03986e-07%202.33333Z%22%20fill%3D%22%23F96643%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        height: 10px;
+        width: 38px;
+        left: -4em;
+        position: absolute;
+        top: 35%;
+        background-repeat: no-repeat;
+    }
+
+    .svelte-72zfh9 :not(a) {
+        font-family: "Gabarito" !important;
+        font-weight: 600 !important;
+        letter-spacing: .1em !important;
+        font-size: 1.3rem !important;
+    }
+
+    .next.svelte-72zfh9 {
+        position: relative !important
+    }
+
+    span.next.svelte-72zfh9:after {
+        content: '';
+        background-image: url("data:image/svg+xml, %3Csvg%20width%3D%2248%22%20height%3D%227%22%20viewBox%3D%220%200%2048%207%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Cpath%20d%3D%22M0%207L-1.01993e-07%204.66667L48%204.66667L48%207L0%207Z%22%20fill%3D%22%23FCCA5B%22%2F%3E%0A%3Cpath%20d%3D%22M-1.01993e-07%204.66667L-2.03986e-07%202.33333L48%202.33334L48%204.66667L-1.01993e-07%204.66667Z%22%20fill%3D%22%23F3A33D%22%2F%3E%0A%3Cpath%20d%3D%22M-2.03986e-07%202.33333L5.32254e-06%201.90735e-06L48%201.2207e-05L48%202.33334L-2.03986e-07%202.33333Z%22%20fill%3D%22%23F96643%22%2F%3E%0A%3C%2Fsvg%3E%0A");
+        height: 10px;
+        width:calc(var(--sidebar-width) + 3.8rem);
+        margin-left: 10px;
+        position: absolute;
+        top: 30%;
+        background-repeat: repeat-x;
+    }
+
+    .svelte-72zfh9 a {
+        letter-spacing: -1px !important;
+    }
+
+    .controls.svelte-72zfh9 span:where(.svelte-72zfh9) {
+        color: #bba07a !important;
+    }
+
+    .text.content * h3 > span {
+        font-size: 1.8rem !important;
+        margin-left: -4rem;
+    }
+
+    .text.content * h3 > a {
+        margin-left: -4rem !important;
+        margin-top: -0.2rem !important;
+    }
+
+    .text.svelte-xe9wq3 code:not(pre *) {
+        background: hsl(34, 74%, 92%) !important;
+/*         border: 1px solid hsl(34, 45%, 83%) !important; */
+/*         color: #603a07 !important; */
+        font-size: 1.3rem ! important;
+    }
+
+    .text.svelte-xe9wq3 a:not(.permalink, code:not(pre *)) {
+        text-decoration-color: var(--sk-fg-accent) !important;
+/*         color: unset !important; */
+        text-underline-offset: 3px !important;
+        color: var(--sk-fg-accent) !important;
+    }
+
+    .text.svelte-xe9wq3 p code {
+        padding: .1em .4em !important;
+        box-shadow: 0 0 0 1.5px hsl(34, 45%, 85%) !important;
+    }
+
+    .links.svelte-wyep2e a:where(.svelte-wyep2e)[aria-current=page] {
+        box-shadow: inset 0px -2px 0px 0px !important;
+    }
+
+    svg.svelte-r1j42q {
+        margin-left: 0.5rem!important;
+        top: -1px !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls {
+        --height: 3.3rem !important;
+    }
+
+    html:before {
+        content: '';
+        position: fixed;
+        background-image: url('https://i.postimg.cc/QxDcncJX/white-recycle-paper-texture-1.jpg');
+        min-height: 100vh;
+        width: 100%;
+        top: 0;
+        left: 0;
+        z-index: 9999999999999999;
+        pointer-events: none !important;
+        background-attachment: fixed;
+        background-repeat: repeat;  /* Added to repeat the texture */
+        background-size: auto;  /* Added to ensure proper repeating */
+        mix-blend-mode: multiply !important;
+        opacity: 30% !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block pre .highlight.add {
+        --color: rgb(139 195 74 / 22%) !important;
+    }
+
+    .links.svelte-wyep2e a:where(.svelte-wyep2e)[aria-current="page"] {
+        box-shadow: none !important;
+        color: rgb(255, 62, 0) !important;
+    }
+
+    .links.svelte-wyep2e a:where(.svelte-wyep2e)[aria-current="page"]:not(.secondary) {
+        border-bottom: 2px solid rgb(255, 62, 0);
+        color: rgb(255, 62, 0) !important;
+    }
+
+    .links.svelte-wyep2e a:where(.svelte-wyep2e):not(.secondary) {
+        border-bottom: 2px solid transparent;
+        color: #bba07a !important;
+    }
+
+    .links.svelte-wyep2e a:where(.svelte-wyep2e):hover {
+        box-shadow: none !important;
+        border-bottom: 2px solid rgba(255, 62, 0, .24);
+    }
+
+    .hover-menu.svelte-f3mr7l a {
+        box-shadow: none !important;
+        border-bottom: none !important;
+    }
+
+    .search-container.svelte-15p10ud {
+        width: 22rem !important;
+
+    }
+
+    div.menu.svelte-wyep2e > form > input {
+        letter-spacing: 0 !important;
+    }
+
+    input.svelte-15p10ud {
+        padding: .5em .5em .7em 2.4em !important;
+        background-position-y: 0.7rem !important;
+        background-position-x: 1rem !important;
+        border-radius: .8rem !important;
+        background-color: #bba07a1a;
+        border: 2px solid hsla(34, 45%, 85%, .58) !important;
+        color: #b09266 !important;
+    }
+
+    input.svelte-15p10ud::placeholder {
+        color: #bba07a !important;
+        text-transform: capitalize !important;
+    }
+
+    .shortcut.svelte-15p10ud {
+        top: calc(50% - 1.16rem) !important;
+    }
+
+    kbd.svelte-15p10ud {
+        color: rgb(176, 146, 102) !important;
+        background: none !important;
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .copy-to-clipboard:before {
+        background-image: url('data:image/svg+xml, %3Csvg%20class%3D%22lucide%20lucide-copy%22%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22none%22%20stroke%3D%22%238c570d%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20stroke-width%3D%222.25%22%20version%3D%221.1%22%20viewBox%3D%220%200%2024%2024%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%3Crect%20transform%3D%22scale%28-1%2C1%29%22%20x%3D%22-16%22%20y%3D%228%22%20width%3D%2214%22%20height%3D%2214%22%20rx%3D%222%22%20ry%3D%222%22%2F%3E%3Cpath%20d%3D%22m20%2016c1.1%200%202-0.9%202-2v-10c0-1.1-0.9-2-2-2h-10c-1.1%200-2%200.9-2%202%22%2F%3E%3C%2Fsvg%3E%0A');
+
+        background-size: 16px 16px !important;
+        background-position-y: 0.3rem !important
+    }
+
+    .text.svelte-xe9wq3 .code-block .controls .copy-to-clipboard:after {
+        background-image: url('data:image/svg+xml, %3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20width%3D%2222%22%20height%3D%2222%22%20viewBox%3D%220%200%2024%2024%22%20fill%3D%22none%22%20stroke%3D%22%238c570d%22%20stroke-width%3D%222.25%22%20stroke-linecap%3D%22round%22%20stroke-linejoin%3D%22round%22%20class%3D%22lucide%20lucide-check%22%3E%3Cpath%20d%3D%22M20%206%209%2017l-5-5%22%2F%3E%3C%2Fsvg%3E')
+    }
+
+    .text.svelte-xe9wq3 blockquote:has(details.legacy) {
+        margin-top: 5rem !important;
+    }
+}
