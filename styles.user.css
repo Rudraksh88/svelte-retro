@@ -28,8 +28,9 @@
         background: #f9f1e4 !important
     }
 
-    h1 {
+    h1{
         color: #373022 !important;
+        letter-spacing: normal !important;
     }
 
     .page.svelte-1e4cvs7 {
@@ -77,6 +78,7 @@
 
     .text.svelte-xe9wq3 h2>span {
         overflow: visible !important;
+        letter-spacing: normal !important;
     }
 
     .scrollbars-invisible [aria-current=page].svelte-1e4cvs7:after {
@@ -291,6 +293,10 @@
         color: #bba07a !important;
     }
 
+    .controls.svelte-72zfh9 {
+        border-top: 1px solid #ecddc7 !important;
+    }
+
     .text.content * h3 > span {
         font-size: 1.8rem !important;
         margin-left: -3.7rem;
@@ -306,6 +312,7 @@
 /*         border: 1px solid hsl(34, 45%, 83%) !important; */
 /*         color: #603a07 !important; */
         font-size: 1.3rem ! important;
+        box-shadow: 0 0 0 1.2px hsl(34, 45%, 85%) !important;
     }
 
     .text.svelte-xe9wq3 a:not(.permalink, code:not(pre *)) {
@@ -317,7 +324,6 @@
 
     .text.svelte-xe9wq3 p code {
         padding: .1em .4em !important;
-        box-shadow: 0 0 0 1.5px hsl(34, 45%, 85%) !important;
     }
 
     .links.svelte-wyep2e a:where(.svelte-wyep2e)[aria-current=page] {
@@ -402,6 +408,7 @@
     input.svelte-15p10ud::placeholder {
         color: #bba07a !important;
         text-transform: capitalize !important;
+        letter-spacing: 0.07rem !important;
     }
 
     .shortcut.svelte-15p10ud {
@@ -496,5 +503,23 @@
 
     .hover-menu.svelte-f3mr7l a:not(:disabled):hover {
         background-color: #f3e1c661!important;
+    }
+
+    .description.svelte-1b5zaym, .description.svelte-1b5zaym * {
+        font-family: 'Gabarito' !important;
+    }
+
+    .adjective.svelte-1b5zaym {
+        letter-spacing: 0.1rem !important;
+    }
+
+    th {
+        font-family: 'Gabarito' !important;
+        font-weight: 600 !important;
+    }
+
+    h2 em {
+        letter-spacing: normal !important;
+        margin-right: 5px !important
     }
 }
