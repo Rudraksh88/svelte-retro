@@ -1,7 +1,7 @@
 /* ==UserStyle==
 @name           SvelteRetro Docs
 @namespace      github.com/openstyles/stylus
-@version        1.0.0
+@version        1.1.0
 @description    A new userstyle
 @author         Rudraksh Tripathi
 ==/UserStyle== */
@@ -11,6 +11,7 @@
         --sk-font-family-heading: "Advercase Demo" !important;
         --sk-font-size-h1: 5rem !important;
         --sk-font-family-body: "Libre Caslon Text" !important;
+        --sk-fg-1: rgb(55, 48, 34) !important;
     }
 
     .home-link.svelte-wyep2e {
@@ -106,7 +107,7 @@
         content: '';
         position: absolute;
         left: 0;
-        top: 50%;
+        top: 48%;
         transform: translateY(-50%);
         width: 16px;  /* Adjust size as needed */
         height: 16px; /* Adjust size as needed */
@@ -180,12 +181,18 @@
 
     .on-this-page.svelte-ro60mh nav:where(.svelte-ro60mh) a:where(.svelte-ro60mh) {
         font-size: 1.5rem !important;
-        text-decoration: none !important;
         color: rgb(176, 146, 102) !important;
+    }
+
+    .on-this-page.svelte-ro60mh nav:where(.svelte-ro60mh) a:where(.svelte-ro60mh):not(.active):hover {
+        text-decoration: underline !important;
+        text-underline-offset: 4px !important;
+        text-decoration-color: hsla(36, 32%, 55%, .7)!important;
     }
 
     .on-this-page.svelte-ro60mh nav:where(.svelte-ro60mh) a.active:where(.svelte-ro60mh) {
         color: #f96743 !important;
+        text-decoration: none !important;
     }
 
     .toc-container.svelte-1anzzz4:after {
@@ -286,7 +293,7 @@
 
     .text.content * h3 > span {
         font-size: 1.8rem !important;
-        margin-left: -4rem;
+        margin-left: -3.7rem;
     }
 
     .text.content * h3 > a {
@@ -354,7 +361,7 @@
 
     .links.svelte-wyep2e a:where(.svelte-wyep2e)[aria-current="page"]:not(.secondary) {
         border-bottom: 2px solid rgb(255, 62, 0);
-        color: rgb(255, 62, 0) !important;
+        color: #ff3e00 !important;
     }
 
     .links.svelte-wyep2e a:where(.svelte-wyep2e):not(.secondary) {
@@ -364,7 +371,8 @@
 
     .links.svelte-wyep2e a:where(.svelte-wyep2e):hover {
         box-shadow: none !important;
-        border-bottom: 2px solid rgba(255, 62, 0, .24);
+/*         border-bottom: 2px solid rgba(255, 62, 0, .24); */
+        border-bottom: 2px solid #c6b0928f;
     }
 
     .hover-menu.svelte-f3mr7l a {
@@ -418,5 +426,75 @@
 
     .text.svelte-xe9wq3 blockquote:has(details.legacy) {
         margin-top: 5rem !important;
+    }
+
+    .edit.svelte-72zfh9 a:where(.svelte-72zfh9) {
+        letter-spacing: -.05em !important;
+    }
+
+    em {
+        letter-spacing: -.05em!important;
+/*         color: #ff3e00 !important; */
+        color: #d43008 !important;
+
+    }
+
+    p, .text.svelte-xe9wq3 h2 > span {
+        color: #373022 !important;
+    }
+
+    li a:hover {
+        text-underline-offset: 4px !important;
+        text-decoration-color: hsla(36, 32%, 55%, .7)!important;
+    }
+
+    .hero.svelte-z3aw0o:before {
+        background: none !important
+    }
+
+    .cta.svelte-z3aw0o {
+        font-family: "Gabarito" !important;
+        letter-spacing: 0.2rem !important;
+        font-weight: 600 !important;
+    }
+
+    .cta.svelte-z3aw0o:hover {
+        text-underline-offset: 5px !important;
+    }
+
+    .cta.svelte-z3aw0o .svelte-r1j42q {
+        margin-left: 0!important;
+        stroke-width: 2.8px !important;
+    }
+
+    .cm-editor .cm-content {
+        font-family: 'JetBrains Mono' !important;
+        font-weight: 600 !important;
+        letter-spacing: normal !important;
+    }
+
+    a.svelte-yd68m6 {
+        background-color: #ecddc73d !important;
+    }
+
+    a.svelte-yd68m6:hover {
+        background-color: #e8d7c05d !important;
+    }
+
+    .options.svelte-yd68m6 a:where(.svelte-yd68m6):hover h2:where(.svelte-yd68m6) {
+        text-decoration: none!important;
+    }
+
+    .svelte-1izccys {
+        color:rgb(55, 48, 34) !important;
+    }
+
+    .text.svelte-6ikra3 .filename {
+        background-image: none!important;
+        padding-left: 2rem !important;
+    }
+
+    .hover-menu.svelte-f3mr7l a:not(:disabled):hover {
+        background-color: #f3e1c661!important;
     }
 }
