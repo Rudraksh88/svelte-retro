@@ -287,6 +287,7 @@
 
     .svelte-72zfh9 a {
         letter-spacing: -1px !important;
+        text-underline-offset: 4px !important;
     }
 
     .controls.svelte-72zfh9 span:where(.svelte-72zfh9) {
